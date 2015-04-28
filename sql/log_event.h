@@ -3739,7 +3739,7 @@ public:
 
   int do_update_pos(Relay_log_info *rli);
 
-  void pack_info(Protocol *protocol);
+  void pack_info(THD *thd, Protocol *protocol);
 #endif
 
 #if defined(MYSQL_CLIENT)

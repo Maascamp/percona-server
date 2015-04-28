@@ -9474,7 +9474,7 @@ int Table_metadata_log_event::do_update_pos(Relay_log_info *rli)
   return 0;
 }
 
-void Table_metadata_log_event::pack_info(Protocol *protocol)
+void Table_metadata_log_event::pack_info(THD *thd, Protocol *protocol)
 {
   size_t len;
   char buf[32];
